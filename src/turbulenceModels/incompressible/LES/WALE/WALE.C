@@ -99,7 +99,7 @@ WALE::WALE
     (
         dimensioned<scalar>::lookupOrAddToDict
         (
-            "ck",
+            "Ck",
             coeffDict_,
             0.094
         )
