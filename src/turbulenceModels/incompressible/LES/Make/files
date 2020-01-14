@@ -32,4 +32,4 @@ mixedSmagorinsky/mixedSmagorinsky.C
 
 kOmegaSSTSAS/kOmegaSSTSAS.C
 
-LIB = $(FOAM_USER_LIBBIN)/libMyincompressibleLESModels
+LIB = $(FOAM_USER_LIBBIN)/libSGSincompressibleLESModels

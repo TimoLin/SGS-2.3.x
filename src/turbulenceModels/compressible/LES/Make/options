@@ -1,5 +1,6 @@
 EXE_INC = \
     -I$(LIB_SGS_SRC)/turbulenceModels \
+    -I$(LIB_SRC)/turbulenceModels/compressible/turbulenceModel/lnInclude \
     -I$(LIB_SRC)/turbulenceModels/LES/LESdeltas/lnInclude \
     -I$(LIB_SRC)/turbulenceModels/LES/LESfilters/lnInclude \
     -I$(LIB_SRC)/thermophysicalModels/basic/lnInclude \
@@ -8,7 +9,7 @@ EXE_INC = \
 
 LIB_LIBS = \
     -L$(FOAM_USER_LIBBIN) \
-    -lcompressibleTurbulenceModel \
+    -lSGScompressibleTurbulenceModel \
     -lLESdeltas \
     -lLESfilters \
     -lfiniteVolume \

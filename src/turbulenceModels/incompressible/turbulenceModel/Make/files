@@ -2,4 +2,4 @@ turbulenceModel.C
 laminar/laminar.C
 derivedFvPatchFields/turbulentHeatFluxTemperature/turbulentHeatFluxTemperatureFvPatchScalarField.C
 
-LIB = $(FOAM_USER_LIBBIN)/libMyincompressibleTurbulenceModel
+LIB = $(FOAM_USER_LIBBIN)/libSGSincompressibleTurbulenceModel

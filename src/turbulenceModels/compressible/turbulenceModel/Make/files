@@ -12,4 +12,4 @@ derivedFvPatchFields/wallHeatTransfer/wallHeatTransferFvPatchScalarField.C
 
 derivedFvPatchFields/externalCoupledTemperatureMixed/externalCoupledTemperatureMixedFvPatchScalarField.C
 
-LIB = $(FOAM_USER_LIBBIN)/libMycompressibleTurbulenceModel
+LIB = $(FOAM_USER_LIBBIN)/libSGScompressibleTurbulenceModel
