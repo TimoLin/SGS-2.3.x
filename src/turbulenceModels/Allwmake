@@ -4,5 +4,6 @@ makeType=${1:-libso}
 set -x
 
 compressible/Allwmake $*
+incompressible/Allwmake $*
 
 # ----------------------------------------------------------------- end-of-file

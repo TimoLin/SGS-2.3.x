@@ -14,4 +14,4 @@ WALE/WALE.C
 compressibleLESdelta/compressibleLESdelta.C
 vanDriestDelta/vanDriestDelta.C
 
-LIB = $(FOAM_LIBBIN)/libMycompressibleLESModels
+LIB = $(FOAM_USER_LIBBIN)/libMycompressibleLESModels
