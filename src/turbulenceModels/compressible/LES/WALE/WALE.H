@@ -30,18 +30,22 @@ Group
 Description
     The choric WALE Model for compressible flows.
 
-    Algebraic eddy viscosity SGS model founded on the assumption that
-    local equilibrium prevails.
-    Thus,
+    Reference:
     \verbatim
+        Nicoud, F., & Ducros, F. (1999).
+        Subgrid-scale stress modelling based on the square of the velocity
+        gradient tensor.
+        Flow, Turbulence and Combustion, 62(3), 183-200.
+    \endverbatim
 
-        B = 2/3*k*I - 2*nuSgs*dev(D)
-
-    where
-
-        D = symm(grad(U));
-        k from rho*D:B + ce*rho*k^3/2/delta = 0
-        muSgs = ck*rho*sqrt(k)*delta
+    The default model coefficients are
+    \verbatim
+        WALECoeffs
+        {
+            Ck                  0.094;
+            Ce                  1.048;
+            Cw                  0.325;
+        }
     \endverbatim
 
 SourceFiles
@@ -119,18 +123,6 @@ public:
         //- Return SGS kinetic energy
         //  calculated from the given velocity gradient
         tmp<volScalarField> k(const tmp<volTensorField>& gradU) const;
-        /*
-        const
-        {
-            volSymmTensorField D(symm(gradU));
-
-            volScalarField a(ce_/delta());
-            volScalarField b((2.0/3.0)*tr(D));
-            volScalarField c(2*ck_*delta()*(dev(D) && D));
-
-            return sqr((-b + sqrt(sqr(b) + 4*a*c))/(2*a));
-        }
-        */
 
         //- Return SGS kinetic energy
         virtual tmp<volScalarField> k() const
