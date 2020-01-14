@@ -1,0 +1,3 @@
+pimpleSGSFoam.C
+
+EXE = $(FOAM_USER_APPBIN)/pimpleSGSFoam
