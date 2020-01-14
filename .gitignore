@@ -1,0 +1,7 @@
+# vim
+*.swp
+
+# make files or dirs
+*dep
+linux64GccDPOpt/
+lnInclude/

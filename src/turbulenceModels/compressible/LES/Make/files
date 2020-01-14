@@ -9,8 +9,9 @@ lowReOneEqEddy/lowReOneEqEddy.C
 homogeneousDynOneEqEddy/homogeneousDynOneEqEddy.C
 DeardorffDiffStress/DeardorffDiffStress.C
 SpalartAllmaras/SpalartAllmaras.C
+WALE/WALE.C
 
 compressibleLESdelta/compressibleLESdelta.C
 vanDriestDelta/vanDriestDelta.C
 
-LIB = $(FOAM_LIBBIN)/libcompressibleLESModels
+LIB = $(FOAM_LIBBIN)/libMycompressibleLESModels
