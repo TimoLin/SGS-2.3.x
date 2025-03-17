@@ -24,6 +24,7 @@ DeardorffDiffStress/DeardorffDiffStress.C
 spectEddyVisc/spectEddyVisc.C
 dynLagrangian/dynLagrangian.C
 WALE/WALE.C
+SIGMA/SIGMA.C
 
 scaleSimilarity/scaleSimilarity.C
 mixedSmagorinsky/mixedSmagorinsky.C
